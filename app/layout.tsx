@@ -11,6 +11,7 @@ import { MenuProvider } from '@/context/MenuContext';
 import { MessageDetailProvider } from '@/context/MessageDetailContext';
 import { SettingsProvider } from '@/context/SettingsContext';
 import { isWeChat as utilIsWeChat } from '@/utils/device';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'ChatGPT Next',
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </SettingsProvider>
         </DeviceProvider>
         <script async src="/prism.js" />
+        <Analytics />
       </body>
     </html>
   );
