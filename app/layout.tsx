@@ -1,5 +1,6 @@
 import './globals.css';
 
+import { Analytics } from '@vercel/analytics/react';
 import npmIsMobile from 'is-mobile';
 import type { Metadata } from 'next';
 import { cookies, headers } from 'next/headers';
@@ -11,7 +12,7 @@ import { MenuProvider } from '@/context/MenuContext';
 import { MessageDetailProvider } from '@/context/MessageDetailContext';
 import { SettingsProvider } from '@/context/SettingsContext';
 import { isWeChat as utilIsWeChat } from '@/utils/device';
-import { Analytics } from '@vercel/analytics/react';
+
 
 export const metadata: Metadata = {
   title: 'ChatGPT Next',
