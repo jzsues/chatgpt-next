@@ -11,7 +11,7 @@ import { getApiKey } from '@/utils/getApiKey';
 //export const config = {
 //  runtime: 'edge',
 //};
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function POST(req: NextRequest) {
   if (env.NODE_ENV === 'development') {
