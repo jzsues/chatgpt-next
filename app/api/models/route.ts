@@ -6,9 +6,11 @@ import { exampleModelsResponse, HttpHeaderJson, HttpMethod, HttpStatus } from '@
 import { env } from '@/utils/env';
 import { getApiKey } from '@/utils/getApiKey';
 
-export const config = {
-  runtime: 'edge',
-};
+//export const config = {
+//  runtime: 'edge',
+//};
+
+export const runtime = 'edge';
 
 /**
  * 获取可用的 models
